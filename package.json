@@ -1,0 +1,53 @@
+{
+  "name": "career-period-calculator",
+  "version": "1.0.0",
+  "description": "프리랜서 경력 기간 중복 계산 도구 - Calculate overlapping periods in freelance career",
+  "type": "module",
+  "homepage": "https://soheekimdev.github.io/career-period-calculator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soheekimdev/career-period-calculator.git"
+  },
+  "keywords": [
+    "career",
+    "freelancer",
+    "calculator",
+    "excel",
+    "typescript",
+    "react"
+  ],
+  "author": {
+    "name": "Sohee Kim",
+    "email": "soheekim.dev@gmail.com",
+    "url": "https://github.com/soheekimdev"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "date-fns": "^3.6.0",
+    "xlsx": "^0.18.5",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}
