@@ -2,7 +2,10 @@
 
 프리랜서 경력의 중복 기간을 자동으로 계산해주는 웹 애플리케이션입니다.
 
-![프로젝트 스크린샷](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=Career+Period+Calculator)
+<img width="1706" alt="image" src="https://github.com/user-attachments/assets/9ae3248e-2b69-4df8-9806-d86b20d1fac0" />
+<img width="1704" alt="image" src="https://github.com/user-attachments/assets/fc8272be-6fba-4569-8677-82de54338a4c" />
+
+
 
 ## 🚀 주요 기능
 
