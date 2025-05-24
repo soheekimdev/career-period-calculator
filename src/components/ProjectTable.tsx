@@ -15,7 +15,7 @@ const ProjectTable: React.FC<ProjectTableProps> = ({ projects, onProjectsChange 
           <col width="100" />
           <col width="100" />
           <col width="80" />
-          <col width="180" />
+          <col width="100" />
           <col width="" />
           <col width="" />
           <col width="90" />
@@ -35,14 +35,14 @@ const ProjectTable: React.FC<ProjectTableProps> = ({ projects, onProjectsChange 
         <tbody>
           {projects.map((project) => (
             <tr key={project.id} className="hover:bg-gray-50">
-              <td className="border border-gray-300 px-4 py-2">{project.projectName}</td>
-              <td className="border border-gray-300 px-4 py-2">{project.startDate}</td>
-              <td className="border border-gray-300 px-4 py-2">{project.endDate}</td>
-              <td className="border border-gray-300 px-4 py-2 text-center">{project.duration}개월</td>
-              <td className="border border-gray-300 px-4 py-2">{project.role}</td>
-              <td className="border border-gray-300 px-4 py-2">{project.client}</td>
-              <td className="border border-gray-300 px-4 py-2 text-sm">{project.skills}</td>
-              <td className="border border-gray-300 px-4 py-2 text-sm">{project.workType || '-'}</td>
+              <td className="border border-gray-300 px-4 py-2 break-keep">{project.projectName}</td>
+              <td className="border border-gray-300 px-4 py-2 break-keep">{project.startDate}</td>
+              <td className="border border-gray-300 px-4 py-2 break-keep">{project.endDate}</td>
+              <td className="border border-gray-300 px-4 py-2 text-center break-keep">{project.duration}개월</td>
+              <td className="border border-gray-300 px-4 py-2 break-keep">{project.role}</td>
+              <td className="border border-gray-300 px-4 py-2 break-keep">{project.client}</td>
+              <td className="border border-gray-300 px-4 py-2 text-sm break-keep">{project.skills}</td>
+              <td className="border border-gray-300 px-4 py-2 text-sm break-keep">{project.workType || '-'}</td>
             </tr>
           ))}
         </tbody>
