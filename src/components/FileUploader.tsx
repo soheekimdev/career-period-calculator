@@ -66,9 +66,9 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onDataLoaded }) => {
     setDragOver(false);
   };
 
-  const handleTemplateDownload = () => {
+  const handleTemplateDownload = async () => {
     try {
-      downloadTemplate();
+      await downloadTemplate();
     } catch (error) {
       setError('템플릿 다운로드 중 오류가 발생했습니다.');
       console.error('템플릿 다운로드 오류:', error);
@@ -219,7 +219,7 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onDataLoaded }) => {
         <h3 className="text-md font-medium text-gray-800 mb-2">📝 사용법</h3>
         <ol className="text-sm text-gray-600 space-y-1">
           <li>1. 위의 "템플릿 다운로드" 버튼을 클릭하여 엑셀 템플릿을 다운로드합니다</li>
-          <li>2. 템플릿에 경력 정보를 입력합니다 (시작연월/종료연월은 YYYY-MM 형식)</li>
+          <li>2. 템플릿에 경력 정보를 입력합니다 (시작연월/종료연월은 YYYY-MM 형식, 기간은 자동 계산)</li>
           <li>3. 작성이 완료된 파일을 여기에 업로드합니다</li>
           <li>4. 자동으로 중복 기간이 계산되어 결과를 확인할 수 있습니다</li>
         </ol>
