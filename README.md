@@ -1,5 +1,7 @@
 # 경력 기간 계산기 (Career Period Calculator)
 
+**🚀 [배포된 서비스 바로가기](https://career-period-calculator.vercel.app/)**
+
 프리랜서 경력의 중복 기간을 자동으로 계산해주는 웹 애플리케이션입니다.
 
 <img width="1706" alt="image" src="https://github.com/user-attachments/assets/9ae3248e-2b69-4df8-9806-d86b20d1fac0" />
