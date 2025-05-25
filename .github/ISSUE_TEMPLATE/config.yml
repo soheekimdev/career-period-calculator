@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 질문이나 토론
+    url: https://github.com/[username]/[repository]/discussions
+    about: 버그나 기능 요청이 아닌 일반적인 질문은 여기서 해주세요
+  - name: 📚 문서
+    url: https://github.com/[username]/[repository]/wiki
+    about: 프로젝트 문서와 가이드라인을 확인하세요
