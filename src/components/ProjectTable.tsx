@@ -3,10 +3,10 @@ import { CareerProject } from '../types/career';
 
 interface ProjectTableProps {
   projects: CareerProject[];
-  onProjectsChange: (projects: CareerProject[]) => void;
+  onProjectsChange?: (projects: CareerProject[]) => void;
 }
 
-const ProjectTable: React.FC<ProjectTableProps> = ({ projects, onProjectsChange }) => {
+const ProjectTable: React.FC<ProjectTableProps> = ({ projects }) => {
   return (
     <div className="overflow-x-auto">
       <table className="w-full border-collapse border border-gray-300">

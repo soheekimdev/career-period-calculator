@@ -140,7 +140,6 @@ export const calculateCareerStats = (projects: CareerProject[]): CareerStats => 
  */
 const isConsecutiveMonth = (month1: string, month2: string): boolean => {
   const date1 = parseYearMonth(month1);
-  const date2 = parseYearMonth(month2);
   
   const nextMonth = new Date(date1.getFullYear(), date1.getMonth() + 1, 1);
   return formatYearMonth(nextMonth) === month2;

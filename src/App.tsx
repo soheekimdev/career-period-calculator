@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { CareerProject, CareerStats } from './types/career';
 import FileUploader from './components/FileUploader';
 import ProjectTable from './components/ProjectTable';
@@ -28,11 +28,6 @@ function App() {
   const handleDataLoaded = (data: CareerProject[]) => {
     console.log('📁 데이터 로드됨:', data.length, '개 프로젝트');
     setProjects(data);
-  };
-
-  const handleProjectsChange = (updatedProjects: CareerProject[]) => {
-    console.log('✏️ 프로젝트 변경됨:', updatedProjects.length, '개 프로젝트');
-    setProjects(updatedProjects);
   };
 
   return (
@@ -68,7 +63,6 @@ function App() {
               <h2 className="text-2xl font-semibold mb-4">📋 프로젝트 목록</h2>
               <ProjectTable 
                 projects={projects} 
-                onProjectsChange={handleProjectsChange}
               />
             </div>
           )}
