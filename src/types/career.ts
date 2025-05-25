@@ -2,8 +2,8 @@
 export interface CareerProject {
   id: string;
   projectName: string;      // 사업명
-  startDate: string;        // 시작년월 (YYYY-MM 형식)
-  endDate: string;          // 종료년월 (YYYY-MM 형식)
+  startDate: string;        // 시작연월 (YYYY-MM 형식)
+  endDate: string;          // 종료연월 (YYYY-MM 형식)
   duration: number;         // 기간 (개월수)
   role: string;             // 담당업무
   client: string;           // 발주처
