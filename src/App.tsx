@@ -63,9 +63,9 @@ function App() {
         </div>
       </div>
 
-      <footer className="bg-gray-100 border-t border-gray-200 py-6 mt-12">
+      <footer className="bg-gray-200 border-t border-gray-300 py-6 mt-12">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-700 text-sm">
             Made by{' '}
             <a
               href="https://github.com/soheekimdev"
@@ -76,7 +76,7 @@ function App() {
               @soheekimdev
             </a>
           </p>
-          <p className="text-gray-500 text-xs mt-1">Built with React + TypeScript + Claude AI 🤖</p>
+          <p className="text-gray-600 text-xs mt-1">Built with React + TypeScript + Claude AI 🤖</p>
         </div>
       </footer>
     </div>

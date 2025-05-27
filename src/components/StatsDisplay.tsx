@@ -29,7 +29,7 @@ const StatsDisplay: React.FC<StatsDisplayProps> = ({ stats, projects }) => {
           {stats.totalYears}년 {stats.totalMonths}개월
         </div>
         <div className="text-sm text-blue-600 font-medium">총 경력 기간</div>
-        <div className="text-xs text-gray-500 mt-1">(중복 포함)</div>
+        <div className="text-xs text-gray-600 mt-1">(중복 포함)</div>
       </div>
 
       <div className="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
@@ -37,7 +37,7 @@ const StatsDisplay: React.FC<StatsDisplayProps> = ({ stats, projects }) => {
           {stats.uniqueYears}년 {stats.uniqueMonths}개월
         </div>
         <div className="text-sm text-green-600 font-medium">실제 경력 기간</div>
-        <div className="text-xs text-gray-500 mt-1">(중복 제외)</div>
+        <div className="text-xs text-gray-600 mt-1">(중복 제외)</div>
       </div>
 
       <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
@@ -45,7 +45,7 @@ const StatsDisplay: React.FC<StatsDisplayProps> = ({ stats, projects }) => {
           {Math.floor(stats.overlapMonths / 12)}년 {stats.overlapMonths % 12}개월
         </div>
         <div className="text-sm text-red-600 font-medium">중복 기간</div>
-        <div className="text-xs text-gray-500 mt-1">총 {stats.overlapMonths}개월</div>
+        <div className="text-xs text-gray-600 mt-1">총 {stats.overlapMonths}개월</div>
       </div>
 
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center md:col-span-3">
@@ -55,7 +55,7 @@ const StatsDisplay: React.FC<StatsDisplayProps> = ({ stats, projects }) => {
           </div>
           <button
             onClick={handleDownloadResults}
-            className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-medium transition-colors flex items-center gap-2"
+            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors flex items-center gap-2"
           >
             <span>💾</span>
             결과 다운로드

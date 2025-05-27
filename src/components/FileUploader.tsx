@@ -132,7 +132,7 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onDataLoaded }) => {
           </div>
           <button
             onClick={handleTemplateDownload}
-            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg font-medium transition-colors flex items-center gap-2"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors flex items-center gap-2"
           >
             <span>📥</span>
             템플릿 다운로드
@@ -163,7 +163,7 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onDataLoaded }) => {
             <p className="text-lg font-medium text-gray-700">
               {dragOver ? '파일을 여기에 놓으세요' : '엑셀 파일을 업로드하세요'}
             </p>
-            <p className="text-sm text-gray-500 mt-1">
+            <p className="text-sm text-gray-600 mt-1">
               .xlsx, .xls, .csv 파일을 지원합니다 | 드래그&드롭 또는 클릭하여 선택
             </p>
           </div>
@@ -172,7 +172,7 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onDataLoaded }) => {
             <button
               onClick={handleButtonClick}
               disabled={isLoading}
-              className="bg-green-500 hover:bg-green-600 disabled:bg-gray-400 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+              className="bg-green-600 hover:bg-green-700 disabled:bg-gray-400 text-white px-6 py-2 rounded-lg font-medium transition-colors"
             >
               {isLoading ? '업로드 중...' : '📁 파일 선택'}
             </button>
@@ -217,7 +217,7 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onDataLoaded }) => {
       {/* 사용법 안내 */}
       <div className="bg-gray-50 border border-gray-200 rounded-lg p-4">
         <h3 className="text-md font-medium text-gray-800 mb-2">📝 사용법</h3>
-        <ol className="text-sm text-gray-600 space-y-1">
+        <ol className="text-sm text-gray-700 space-y-1">
           <li>1. 위의 "템플릿 다운로드" 버튼을 클릭하여 엑셀 템플릿을 다운로드합니다</li>
           <li>2. 템플릿에 경력 정보를 입력합니다 (시작연월/종료연월은 YYYY-MM 형식)</li>
           <li>3. 작성이 완료된 파일을 여기에 업로드합니다</li>
