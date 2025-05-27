@@ -172,7 +172,7 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onDataLoaded }) => {
             <button
               onClick={handleButtonClick}
               disabled={isLoading}
-              className="bg-green-600 hover:bg-green-700 disabled:bg-gray-400 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+              className="bg-green-700 hover:bg-green-800 disabled:bg-gray-400 text-white px-6 py-2 rounded-lg font-medium transition-colors"
             >
               {isLoading ? '업로드 중...' : '📁 파일 선택'}
             </button>

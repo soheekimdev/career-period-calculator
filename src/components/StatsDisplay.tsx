@@ -55,7 +55,7 @@ const StatsDisplay: React.FC<StatsDisplayProps> = ({ stats, projects }) => {
           </div>
           <button
             onClick={handleDownloadResults}
-            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors flex items-center gap-2"
+            className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-lg font-medium transition-colors flex items-center gap-2"
           >
             <span>💾</span>
             결과 다운로드
